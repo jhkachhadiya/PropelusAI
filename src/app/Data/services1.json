@@ -1,0 +1,50 @@
+[
+  {
+    "icon": "/assets/images/icon/serviceIcon3_1.svg",
+    "title": "Digital Marketing",
+    "desc": "Comprehensive marketing strategies to boost your online presence and drive conversions.",
+    "features": [
+      "SEO Optimization",
+      "Social Media Marketing",
+      "Content Strategy",
+      "PPC Campaigns"
+    ],
+    "buttonText": "Learn More"
+  },
+  {
+    "icon": "/assets/images/icon/serviceIcon3_2.svg",
+    "title": "IT Solutions",
+    "desc": "Cutting-edge technology solutions to streamline your business operations.",
+    "features": [
+      "Cloud Infrastructure",
+      "Cybersecurity",
+      "System Integration",
+      "Technical Support"
+    ],
+    "buttonText": "Learn More"
+  },
+  {
+    "icon": "/assets/images/icon/serviceIcon3_3.svg",
+    "title": "Web Development",
+    "desc": "Custom websites and applications built for performance and user experience.",
+    "features": [
+      "Responsive Design",
+      "E-commerce Solutions",
+      "Mobile Apps",
+      "API Development"
+    ],
+    "buttonText": "Learn More"
+  },
+  {
+    "icon": "/assets/images/icon/serviceIcon3_5.svg",
+    "title": "Business Consulting",
+    "desc": "Strategic guidance to help you make informed decisions and grow your business.",
+    "features": [
+      "Digital Transformation",
+      "Process Optimization",
+      "Growth Strategy",
+      "Market Analysis"
+    ],
+    "buttonText": "Learn More"
+  }
+]
