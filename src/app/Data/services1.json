@@ -1,50 +1,51 @@
 [
   {
     "icon": "/assets/images/icon/serviceIcon3_1.svg",
-    "title": "Digital Marketing",
-    "desc": "Comprehensive marketing strategies to boost your online presence and drive conversions.",
-    "features": [
-      "SEO Optimization",
-      "Social Media Marketing",
-      "Content Strategy",
-      "PPC Campaigns"
-    ],
-    "buttonText": "Learn More"
+    "iconColor": "purple",
+    "title": "Website Development",
+    "desc": "Fast, custom websites",
+    "href": "/service/website-development"
   },
   {
     "icon": "/assets/images/icon/serviceIcon3_2.svg",
-    "title": "IT Solutions",
-    "desc": "Cutting-edge technology solutions to streamline your business operations.",
-    "features": [
-      "Cloud Infrastructure",
-      "Cybersecurity",
-      "System Integration",
-      "Technical Support"
-    ],
-    "buttonText": "Learn More"
+    "iconColor": "blue",
+    "title": "Mobile Apps",
+    "desc": "iOS & Android apps",
+    "href": "/service/mobile-apps"
   },
   {
     "icon": "/assets/images/icon/serviceIcon3_3.svg",
-    "title": "Web Development",
-    "desc": "Custom websites and applications built for performance and user experience.",
-    "features": [
-      "Responsive Design",
-      "E-commerce Solutions",
-      "Mobile Apps",
-      "API Development"
-    ],
-    "buttonText": "Learn More"
+    "iconColor": "pink",
+    "title": "LinkedIn Marketing",
+    "desc": "Grow LinkedIn reach",
+    "href": "/service/linkedin-marketing"
+  },
+  {
+    "icon": "/assets/images/icon/serviceIcon3_4.svg",
+    "iconColor": "green",
+    "title": "Lead Generation",
+    "desc": "Get qualified leads",
+    "href": "/service/lead-generation"
   },
   {
     "icon": "/assets/images/icon/serviceIcon3_5.svg",
-    "title": "Business Consulting",
-    "desc": "Strategic guidance to help you make informed decisions and grow your business.",
-    "features": [
-      "Digital Transformation",
-      "Process Optimization",
-      "Growth Strategy",
-      "Market Analysis"
-    ],
-    "buttonText": "Learn More"
+    "iconColor": "purple",
+    "title": "Marketing Automation",
+    "desc": "Automate campaigns easily",
+    "href": "/service/marketing-automation"
+  },
+  {
+    "icon": "/assets/images/icon/serviceIcon3_6.svg",
+    "iconColor": "blue",
+    "title": "Custom Email Domains",
+    "desc": "Professional email setup",
+    "href": "/service/custom-email-domains"
+  },
+  {
+    "icon": "/assets/images/icon/serviceIcon1_1.svg",
+    "iconColor": "pink",
+    "title": "Cybersecurity",
+    "desc": "Protect digital assets",
+    "href": "/service/cybersecurity"
   }
 ]

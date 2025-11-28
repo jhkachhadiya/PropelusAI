@@ -42,7 +42,7 @@ const Brand1 = () => {
                 <div className="container">
                     <div className="brand-slider-wrapper style1">
                         <h2 className="single-section-title wow fadeInUp" data-wow-delay=".2s">
-                            Millions of clients trust us.
+                        Trusted by 500+ businesses globally.
                         </h2>
                         <div className="row">
                             <div className="slider-area brandSliderOne">
@@ -56,8 +56,8 @@ const Brand1 = () => {
                                             <Image 
                                             src={item.img} 
                                             alt="img" 
-                                            width={200}
-                                            height={60}
+                                            width={150}
+                                            height={45}
                                             />
                                             </div>
                                         </div>

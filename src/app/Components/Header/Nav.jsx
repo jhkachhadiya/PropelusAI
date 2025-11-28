@@ -1,149 +1,130 @@
 import Link from 'next/link';
-import DropDown from './DropDown';
+import { useState } from 'react';
+import Image from 'next/image';
+import servicesData from '../../Data/services1.json';
 
-export default function Nav({ setMobileToggle }) {
+const servicesItems = servicesData;
+
+export default function Nav({ setMobileToggle, isMobile = false, servicesOpen, setServicesOpen }) {
+  const handleLinkClick = () => {
+    if (setMobileToggle) {
+      setMobileToggle(false);
+    }
+  };
+
+  if (isMobile) {
+    return (
+      <ul className="mobile-nav-list">
+        <li className="mobile-nav-item">
+          <button
+            className={`mobile-nav-link ${servicesOpen ? 'active' : ''}`}
+            onClick={() => setServicesOpen(!servicesOpen)}
+          >
+            Services
+            <svg
+              className={`mobile-nav-chevron ${servicesOpen ? 'open' : ''}`}
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+            >
+              <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
+          <ul className={`mobile-nav-submenu ${servicesOpen ? 'open' : ''}`}>
+            {servicesItems.map((item, index) => (
+              <li key={index} className="mobile-nav-subitem">
+                <Link
+                  href={item.href}
+                  className="mobile-nav-sublink"
+                  onClick={handleLinkClick}
+                >
+                  {item.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </li>
+        <li className="mobile-nav-item">
+          <Link href="/solutions" className="mobile-nav-link" onClick={handleLinkClick}>
+            Solutions
+          </Link>
+        </li>
+        <li className="mobile-nav-item">
+          <Link href="/resources" className="mobile-nav-link" onClick={handleLinkClick}>
+            Resources
+          </Link>
+        </li>
+        <li className="mobile-nav-item">
+          <Link href="/pricing" className="mobile-nav-link" onClick={handleLinkClick}>
+            Pricing
+          </Link>
+        </li>
+      </ul>
+    );
+  }
+
   return (
-    <ul className="cs_nav_list fw-medium">
-      <li className="menu-item-has-children">
-        <Link href="/">Home</Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link href="/" onClick={() => setMobileToggle(false)}>
-              Home Version 1
-              </Link>
-            </li>
-            <li>
-              <Link href="/home2" onClick={() => setMobileToggle(false)}>
-              Home Version 2
-              </Link>
-            </li>
-            <li>
-              <Link href="/home3" onClick={() => setMobileToggle(false)}>
-                Home Version 3
-              </Link>
-            </li>            
-          </ul>
-        </DropDown>
-      </li>
-      <li className="menu-item-has-children">
-        <Link href="#">Pages</Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link href="/about" onClick={() => setMobileToggle(false)}>
-                About Us
-              </Link>
-            </li>
-            <li>
-              <Link href="/team" onClick={() => setMobileToggle(false)}>
-               Our Team
-              </Link>
-            </li>            
-            <li>
-              <Link href="/team/team-details" onClick={() => setMobileToggle(false)}>
-                Team Details
-              </Link>
-            </li>             
-            <li>
-              <Link href="/pricing" onClick={() => setMobileToggle(false)}>
-              Pricing
-              </Link>
-            </li> 
-            <li>
-              <Link href="/faq" onClick={() => setMobileToggle(false)}>
-              Faq
-              </Link>
-            </li> 
-            <li>
-              <Link href="/contact" onClick={() => setMobileToggle(false)}>
-              Contact
-              </Link>
-            </li>                         
-          </ul>
-        </DropDown>
-      </li>  
-
-      <li className="menu-item-has-children">
-        <Link href="/project" onClick={() => setMobileToggle(false)}>
-        Project
-        </Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link href="/project" onClick={() => setMobileToggle(false)}>
-              Project 1
-              </Link>
-            </li>
-            <li>
-              <Link href="/project2" onClick={() => setMobileToggle(false)}>
-              Project 2
-              </Link>
-            </li>           
-            <li>
-              <Link href="/project/project-details" onClick={() => setMobileToggle(false)}>
-              Project Details
-              </Link>
-            </li>
-          </ul>
-        </DropDown>
-      </li> 
-      
-      <li className="menu-item-has-children">
-        <Link href="/service" onClick={() => setMobileToggle(false)}>
+    <ul className="navbar-nav-list">
+      <li
+        className="navbar-nav-item has-megamenu"
+        onMouseEnter={() => setServicesOpen(true)}
+        onMouseLeave={() => setServicesOpen(false)}
+      >
+        <Link href="/service" className="navbar-nav-link">
           Services
+          <svg
+            className={`nav-chevron ${servicesOpen ? 'open' : ''}`}
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+          >
+            <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
         </Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link href="/service" onClick={() => setMobileToggle(false)}>
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link href="/service/service-details" onClick={() => setMobileToggle(false)}>
-                Service Details
-              </Link>
-            </li>
-          </ul>
-        </DropDown>
-
-      </li>      
-      <li className="menu-item-has-children">
-        <Link href="/blog" onClick={() => setMobileToggle(false)}>
-          Blog
-        </Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link href="/blog" onClick={() => setMobileToggle(false)}>
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog-sidebar" onClick={() => setMobileToggle(false)}>
-                Blog With Sidebar
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog-left-sidebar" onClick={() => setMobileToggle(false)}>
-              Blog Left Sidebar
-              </Link>
-            </li>                         
-            <li>
-              <Link
-                href="/blog/blog-details"
-                onClick={() => setMobileToggle(false)}
-              >
-                Blog Details
-              </Link>
-            </li>
-          </ul>
-        </DropDown>
+        <div className={`navbar-megamenu ${servicesOpen ? 'open' : ''}`}>
+          <div className="megamenu-content">
+            <div className="megamenu-grid">
+              {servicesItems.map((item, index) => (
+                <Link
+                  key={index}
+                  href={item.href}
+                  className="megamenu-item"
+                >
+                  <div className="megamenu-item-icon">
+                    <div className={`megamenu-icon-box icon-box-${item.iconColor}`}>
+                      <Image 
+                        src={item.icon} 
+                        alt={item.title} 
+                        width={24} 
+                        height={24}
+                      />
+                    </div>
+                  </div>
+                  <div className="megamenu-item-content">
+                    <span className="megamenu-item-title">{item.title}</span>
+                    <span className="megamenu-item-desc">{item.desc}</span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </div>
       </li>
-      <li>
-        <Link href="/contact" onClick={() => setMobileToggle(false)}>
-          Contact
+      <li className="navbar-nav-item">
+        <Link href="/solutions" className="navbar-nav-link">
+          Solutions
+        </Link>
+      </li>
+      <li className="navbar-nav-item">
+        <Link href="/resources" className="navbar-nav-link">
+          Resources
+        </Link>
+      </li>
+      <li className="navbar-nav-item">
+        <Link href="/pricing" className="navbar-nav-link">
+          Pricing
         </Link>
       </li>
     </ul>

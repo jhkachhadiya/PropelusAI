@@ -2,98 +2,127 @@
 import { useEffect, useState } from 'react';
 import Nav from './Nav';
 import Link from 'next/link';
-import Image from 'next/image';
+
 export default function Header1({ variant }) {
   const [mobileToggle, setMobileToggle] = useState(false);
-  const [isSticky, setIsSticky] = useState();
-  const [prevScrollPos, setPrevScrollPos] = useState(0);
-  const [searchToggle, setSearchToggle] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.scrollY;
-      if (currentScrollPos > prevScrollPos) {
-        setIsSticky('cs-gescout_sticky'); // Scrolling down
-      } else if (currentScrollPos !== 0) {
-        setIsSticky('cs-gescout_show cs-gescout_sticky'); // Scrolling up
+      const scrollTop = window.scrollY;
+      if (scrollTop > 20) {
+        setIsSticky(true);
       } else {
-        setIsSticky();
+        setIsSticky(false);
       }
-      setPrevScrollPos(currentScrollPos); // Update previous scroll position
     };
 
     window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
+  // Close mobile menu when clicking outside
+  useEffect(() => {
+    if (mobileToggle) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
     return () => {
-      window.removeEventListener('scroll', handleScroll); // Cleanup the event listener
+      document.body.style.overflow = 'unset';
     };
-  }, [prevScrollPos]);
+  }, [mobileToggle]);
 
   return (
-    <div>
-    <header
-      className={`cs_site_header header_style_2 cs_style_1 ${
-        variant ? variant : ''
-      } cs_sticky_header cs_site_header_full_width ${
-        mobileToggle ? 'cs_mobile_toggle_active' : ''
-      } ${isSticky ? isSticky : ''}`}
-    >
-      <div className="cs_main_header">
-        <div className="container">
-          <div className="cs_main_header_in">
-            <div className="cs_main_header_left">
-            <Link className="cs_site_branding" href="/">
-                <Image src="/assets/images/logo/logo.svg" alt="img" width={177} height={54}   />
+    <>
+      <header
+        className={`propelus-navbar ${isSticky ? 'navbar-sticky' : ''} ${
+          mobileToggle ? 'mobile-menu-open' : ''
+        }`}
+      >
+        <div className="navbar-container">
+          {/* Left: Logo */}
+          <div className="navbar-logo">
+            <Link href="/" className="logo-link">
+              <span className="logo-text">PropelusAI</span>
+            </Link>
+          </div>
+
+          {/* Center: Navigation Links */}
+          <nav className="navbar-nav">
+            <Nav 
+              setMobileToggle={setMobileToggle}
+              servicesOpen={servicesOpen}
+              setServicesOpen={setServicesOpen}
+              isMobile={false}
+            />
+          </nav>
+
+          {/* Right: Contact Button */}
+          <div className="navbar-actions">
+            <Link href="/contact" className="theme-btn navbar-cta-btn">
+              Contact Us
+            </Link>
+          </div>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            className={`mobile-menu-toggle ${mobileToggle ? 'active' : ''}`}
+            onClick={() => setMobileToggle(!mobileToggle)}
+            aria-label="Toggle menu"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </header>
+
+      {/* Mobile Menu Overlay */}
+      <div
+        className={`mobile-menu-overlay ${mobileToggle ? 'active' : ''}`}
+        onClick={() => setMobileToggle(false)}
+      >
+        <div
+          className="mobile-menu-content"
+          onClick={(e) => e.stopPropagation()}
+        >
+          <div className="mobile-menu-header">
+            <Link href="/" className="mobile-logo" onClick={() => setMobileToggle(false)}>
+              PropelusAI
+            </Link>
+            <button
+              className="mobile-menu-close"
+              onClick={() => setMobileToggle(false)}
+              aria-label="Close menu"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+          <div className="mobile-menu-body">
+            <Nav 
+              setMobileToggle={setMobileToggle}
+              isMobile={true}
+              servicesOpen={mobileServicesOpen}
+              setServicesOpen={setMobileServicesOpen}
+            />
+            <div className="mobile-menu-footer">
+              <Link
+                href="/contact"
+                className="theme-btn mobile-cta-btn"
+                onClick={() => setMobileToggle(false)}
+              >
+                Contact Us
               </Link>
-              </div>
-              <div className="cs_main_header_center">
-                <div className="cs_nav cs_primary_font fw-medium">
-                  <span
-                    className={
-                      mobileToggle
-                        ? 'cs-munu_toggle cs_teggle_active'
-                        : 'cs-munu_toggle'
-                    }
-                    onClick={() => setMobileToggle(!mobileToggle)}
-                  >
-                    <span></span>
-                  </span>
-                  <Nav setMobileToggle={setMobileToggle} />
-                </div>
-            </div>
-            <div className="cs_main_header_right">
-              <div className="header-btn d-flex align-items-center">
-
-              <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a>
-                <div className="header-button ms-4">
-                    <Link href="/contact" className="theme-btn">
-                        <span>
-                            Get Started
-                            <i className="bi bi-arrow-right"></i>
-                        </span>
-                    </Link>
-
-                </div>
-              </div>
             </div>
           </div>
         </div>
       </div>
-    </header>
-      <div className={`search-wrap ${searchToggle ? 'active' : ''}`} >
-      <div className="search-inner">
-          <i onClick={() => setSearchToggle(!searchToggle)} id="search-close" className="bi bi-x-lg search-close"></i>
-          <div className="search-cell">
-              <form method="get">
-                  <div className="search-field-holder">
-                      <input type="search" className="main-search-input" placeholder="Search..." />
-                  </div>
-              </form>
-          </div>
-      </div>
-      </div>
-
-    </div>
-
+    </>
   );
 }
