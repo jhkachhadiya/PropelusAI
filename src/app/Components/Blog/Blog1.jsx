@@ -16,8 +16,8 @@ const Blog1 = () => {
                     <div className="row gy-5">
                         <div className="col-xl-4 col-md-6">
                             <div className="blog-card style1 wow fadeInUp" data-wow-delay=".2s">
-                                <div className="thumb">
-                                <Image src="/assets/images/blog/blogThumb1_1.jpg" alt="img" width={326} height={219}   />
+                                <div className="thumb" style={{overflow: 'hidden', borderRadius: '12px', marginBottom: '20px'}}>
+                                <Image src="/assets/images/blog/blog-email-domains.webp" alt="img" width={326} height={219} style={{width: '100%', height: 'auto', display: 'block'}} />
                                 </div>
                                 <div className="body">
                                     <div className="tag-meta">
@@ -44,8 +44,8 @@ const Blog1 = () => {
                         </div>
                         <div className="col-xl-4 col-md-6">
                             <div className="blog-card style1 wow fadeInUp" data-wow-delay=".4s">
-                                <div className="thumb">
-                                <Image src="/assets/images/blog/blogThumb1_2.jpg" alt="img" width={326} height={219}   />
+                                <div className="thumb" style={{overflow: 'hidden', borderRadius: '12px', marginBottom: '20px'}}>
+                                <Image src="/assets/images/blog/blog-checklist.webp" alt="img" width={326} height={219} style={{width: '100%', height: 'auto', display: 'block'}} />
                                 </div>
                                 <div className="body">
                                     <div className="tag-meta">
@@ -72,8 +72,8 @@ const Blog1 = () => {
                         </div>
                         <div className="col-xl-4 col-md-6">
                             <div className="blog-card style1 wow fadeInUp" data-wow-delay=".6s">
-                                <div className="thumb">
-                                <Image src="/assets/images/blog/blogThumb1_1.jpg" alt="img" width={326} height={219}   />
+                                <div className="thumb" style={{overflow: 'hidden', borderRadius: '12px', marginBottom: '20px'}}>
+                                <Image src="/assets/images/blog/blog-cybersecurity.webp" alt="img" width={326} height={219} style={{width: '100%', height: 'auto', display: 'block'}} />
                                 </div>
                                 <div className="body">
                                     <div className="tag-meta">
@@ -81,6 +81,34 @@ const Blog1 = () => {
                                         Technology
                                     </div>
                                     <h3><Link href="/blog/blog-details">That will help you get 1% better every day</Link></h3>
+                                    <div className="blog-meta">
+                                        <div className="item child1">
+                                            <span className="icon">
+                                            <Image src="/assets/images/icon/userIcon.svg" alt="img" width={14} height={16}   />
+                                            </span>
+                                            <span className="text">By Admin</span>
+                                        </div>
+                                        <div className="item">
+                                            <span className="icon">
+                                            <Image src="/assets/images/icon/calendar.svg" alt="img" width={15} height={16}   />
+                                            </span>
+                                            <span className="text">Sep 30, 2024</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-4 col-md-6">
+                            <div className="blog-card style1 wow fadeInUp" data-wow-delay=".8s">
+                                <div className="thumb" style={{overflow: 'hidden', borderRadius: '12px', marginBottom: '20px'}}>
+                                <Image src="/assets/images/blog/blog-lead-generation.webp" alt="img" width={326} height={219} style={{width: '100%', height: 'auto', display: 'block'}} />
+                                </div>
+                                <div className="body">
+                                    <div className="tag-meta">
+                                    <Image src="/assets/images/icon/FolderIcon.svg" alt="img" width={16} height={12}   />
+                                        Business
+                                    </div>
+                                    <h3><Link href="/blog/blog-details">Effective strategies for lead generation</Link></h3>
                                     <div className="blog-meta">
                                         <div className="item child1">
                                             <span className="icon">

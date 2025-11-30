@@ -1,12 +1,8 @@
 "use client"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const Resources = () => {
-    const [searchQuery, setSearchQuery] = useState('');
-    const [activeCategory, setActiveCategory] = useState('all');
-    const [openFaq, setOpenFaq] = useState(null);
-
     const categories = [
         { id: 'all', label: 'All Resources', icon: 'bi-collection' },
         { id: 'blog', label: 'Blog', icon: 'bi-pencil-square' },
@@ -16,6 +12,21 @@ const Resources = () => {
         { id: 'academy', label: 'Learning Academy', icon: 'bi-mortarboard' },
         { id: 'support', label: 'Support', icon: 'bi-chat-dots' }
     ];
+
+    const [searchQuery, setSearchQuery] = useState('');
+    const [activeCategory, setActiveCategory] = useState('all');
+    const [openFaq, setOpenFaq] = useState(null);
+
+    // Handle hash fragment on page load
+    useEffect(() => {
+        if (typeof window !== 'undefined') {
+            const hash = window.location.hash.replace('#', '');
+            const validCategories = ['all', 'blog', 'guides', 'case-studies', 'docs', 'academy', 'support'];
+            if (hash && validCategories.includes(hash)) {
+                setActiveCategory(hash);
+            }
+        }
+    }, []);
 
     const resources = [
         {

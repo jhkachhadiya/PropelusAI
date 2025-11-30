@@ -78,7 +78,7 @@ const page = () => {
                 content="Join thousands of businesses already using PropelusAI to automate their operations, generate leads, and scale faster. Start your free trial today—no credit card required."
                 btnurl1="/demo"
                 btnurl2="/pricing"
-                img="/assets/images/cta/ctaThumb1_1.png"
+                img="/assets/images/Ready to Transform Your Business.webp"
             ></Cta1>
             <Blog1></Blog1>
         </div>

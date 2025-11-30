@@ -14,7 +14,7 @@ const page = () => {
                 Title="About Us"
             ></BreadCumb> 
             <About4
-                img1="/assets/images/about/aboutThumb1_1.png"
+                img1="/assets/images/about/Simple Reports & Analytics Backdown As it .webp"
                 img2="/assets/images/about/aboutThumb1_2.png"
                 subtitle="About Our App"
                 title="Simple Reports & Analytics Backdown As it"
@@ -28,7 +28,7 @@ const page = () => {
                 btnurl="/about"
             ></About4>  
             <Choose2
-               img1="/assets/images/wcu/wcuThumb2_1.png" 
+               img1="/assets/images/about/Manage your Team's Easily Communication. .webp" 
                img2="/assets/images/wcu/wcuThumb2_2.png" 
                img3="/assets/images/wcu/wcuThumb2_3.png" 
                subtitle="Customizations & Analysis" 

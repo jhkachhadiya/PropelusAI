@@ -109,7 +109,7 @@ const Footer = () => {
                                 </div>
                                 <ul className="list-area">
                                     <li>
-                                        <Link href="/blog">
+                                        <Link href="/resources#blog">
                                             Blog
                                         </Link>
                                     </li>
@@ -165,7 +165,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/project">
+                                        <Link href="/">
                                             Projects
                                         </Link>
                                     </li>

@@ -64,10 +64,10 @@ const Choose4 = () => {
                         <div className="col-xl-6">
                             <div className="wcu-thumb">
                                 <div className="main-thumb img-custom-anim-left wow fadeInUp" data-wow-delay=".4s">
-                                    <Image src="/assets/images/wcu/wcuThumb3_1.png" alt="img" width={386} height={503}   />
+                                <Image src="/assets/images/about/Manage your Traffic Growth Easily .webp" alt="Traffic Growth" width={386} height={503} style={{width: '100%', height: 'auto', display: 'block'}} />
                                 </div>
                                 <div className="thumb2">
-                                    <Image src="/assets/images/wcu/wcuThumb3_2.png" alt="img" width={558} height={340}   />
+                                    <Image src="/assets/images/wcu/wcuThumb3_2.png" alt="img" width={558} height={340} style={{width: '100%', height: 'auto', display: 'block'}} />
                                 </div>
                                 <div className="thumb-box float-bob-y wow fadeInUp" data-wow-delay=".4s">
                                     <h5>Traffic Growth</h5>

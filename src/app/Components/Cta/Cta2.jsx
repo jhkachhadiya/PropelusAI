@@ -6,7 +6,7 @@ const Cta2 = () => {
         <section className="service-section-3">
         <div className="container">
             <div className="service-thumb section-padding pb-0 img-custom-anim-left wow fadeInLeft" data-wow-delay=".3s">
-            <Image src="/assets/images/services/servicesThumb1_1.jpg" alt="img" width={1170} height={526}   />
+            <Image src="/assets/images/website-development-service.webp" alt="Website Development Service" width={1170} height={526} style={{width: '100%', height: 'auto'}} />
             </div>
         </div>
         <div className="service-container-wrapper style3  section-padding fix">

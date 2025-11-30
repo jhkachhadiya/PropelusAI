@@ -11,13 +11,13 @@ const Choose2 = ({img1,img2,img3,subtitle,title,content,boximg1,boxtitle1,boxcon
                             <div className="col-xl-6">
                                 <div className="wcu-thumb">
                                     <div className="main-thumb img-custom-anim-right wow fadeInUp" data-wow-delay=".4s">
-                                    <Image src={img1} alt="img" width={500} height={365}   />
+                                    <Image src={img1} alt="img" width={500} height={365} style={{width: '100%', height: 'auto', display: 'block'}} />
                                     </div>
                                     <div className="thumb2 float-bob-y">
-                                    <Image src={img2} alt="img" width={215} height={206}   />
+                                    <Image src={img2} alt="img" width={215} height={206} style={{width: '100%', height: 'auto', display: 'block'}} />
                                         </div>
                                     <div className="thumb3 float-bob-x">
-                                    <Image src={img3} alt="img" width={208} height={206}   />
+                                    <Image src={img3} alt="img" width={208} height={206} style={{width: '100%', height: 'auto', display: 'block'}} />
                                         </div>
                                 </div>
                             </div>

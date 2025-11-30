@@ -6,7 +6,9 @@ const Team2 = () => {
     return (
         <section className="team-section-3 section-padding pt-0 fix">
         <div className="container">
-            <div className="section-title text-center mxw-685 mx-auto">
+            <div className="section-title text-center mxw-685 mx-auto mb-60">
+                <div className="profile-image-wrapper text-center mb-4 wow fadeInUp" data-wow-delay=".2s" style={{marginBottom: '30px'}}>
+                </div>
                 <h2 className="title wow fadeInUp" data-wow-delay=".4s">We Provide the Best Quality</h2>
             </div>
             <div className="row">

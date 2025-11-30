@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import data from '../../Data/services1.json';
 
 const Services1 = () => {
@@ -23,7 +24,7 @@ const Services1 = () => {
                         <div className="row gy-4">
                             {data.map((item, index) => (
                                 <div key={index} className="col-xl-4 col-lg-4 col-md-6 col-12">
-                                    <Link href="/service" className="service-card-link">
+                                    <Link href={item.href || "/service"} className="service-card-link">
                                         <div className={`service-box style3 service-card-enhanced wow fadeInUp`} data-wow-delay={`${(index * 0.1)}s`}>
                                             <div className={`icon-box style3 icon-box-${item.iconColor}`}>
                                                 <i className={`bi ${item.icon}`} style={{fontSize: '48px'}}></i>

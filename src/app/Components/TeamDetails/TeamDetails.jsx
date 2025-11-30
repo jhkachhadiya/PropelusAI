@@ -8,7 +8,7 @@ const TeamDetails = () => {
                 <div className="row g-4 align-items-center">
                     <div className="col-lg-4">
                         <div className="team-details-thumb wow fadeInUp" data-wow-delay=".6s">
-                        <Image src="/assets/images/team/teamDetailsThumb1_1.jpg" alt="img" width={355} height={431}   />
+                        <Image src="/assets/images/perofile/Kenneth Z. Burke .webp" alt="Kenneth Z. Burke" width={355} height={431} style={{width: '100%', height: 'auto', objectFit: 'cover'}} />
                         </div>
                     </div>
                     <div className="col-lg-8">

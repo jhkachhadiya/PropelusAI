@@ -4,48 +4,55 @@
     "iconColor": "purple",
     "title": "Website Development",
     "desc": "Fast, custom websites",
-    "href": "/service/website-development"
+    "href": "/service/website-development",
+    "image": "/website-development.webp"
   },
   {
     "icon": "bi-phone-fill",
     "iconColor": "blue",
     "title": "Mobile Apps",
     "desc": "iOS & Android apps",
-    "href": "/service/mobile-app"
+    "href": "/service/mobile-app",
+    "image": "/mobile-app.webp"
   },
   {
     "icon": "bi-linkedin",
     "iconColor": "pink",
     "title": "LinkedIn Marketing",
     "desc": "Grow LinkedIn reach",
-    "href": "/service/linkedin-marketing"
+    "href": "/service/linkedin-marketing",
+    "image": "/linkedin-marketing.webp"
   },
   {
     "icon": "bi-person-badge",
     "iconColor": "green",
     "title": "Lead Generation",
     "desc": "Get qualified leads",
-    "href": "/service/lead-generation"
+    "href": "/service/lead-generation",
+    "image": "/lead-generation.webp"
   },
   {
     "icon": "bi-robot",
     "iconColor": "purple",
     "title": "Marketing Automation",
     "desc": "Automate campaigns easily",
-    "href": "/service/marketing-automation"
+    "href": "/service/marketing-automation",
+    "image": "/marketing-automation.webp"
   },
   {
     "icon": "bi-envelope-at",
     "iconColor": "blue",
     "title": "Custom Email Domains",
     "desc": "Professional email setup",
-    "href": "/service/custom-email-domains"
+    "href": "/service/custom-email-domains",
+    "image": "/custom-email-domains.webp"
   },
   {
     "icon": "bi-shield-lock-fill",
     "iconColor": "pink",
     "title": "Cybersecurity",
     "desc": "Protect digital assets",
-    "href": "/service/cybersecurity"
+    "href": "/service/cybersecurity",
+    "image": "/cybersecurity.webp"
   }
 ]
