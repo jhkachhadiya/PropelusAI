@@ -44,7 +44,7 @@ const About4 = ({img1,img2,subtitle,title,content,FeatureList,btnname,btnurl}) =
                                     </div>
                                     <ul className="checklist style1 wow fadeInUp" data-wow-delay=".2s">
                                     {FeatureList?.map((item, index) => (
-                                        <li key={index}><Image src="/assets/images/icon/checkmarkIcon.svg" alt="img" width={30} height={30}   /> {item}</li>
+                                        <li key={index}><i className="bi bi-check-circle-fill" style={{fontSize: '30px', color: '#7444FD'}}></i> {item}</li>
                                     ))}
                                     </ul>
                                     <Link className="theme-btn wow fadeInUp" data-wow-delay=".2s" href={btnurl}>{btnname}

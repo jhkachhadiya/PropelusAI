@@ -20,12 +20,11 @@ const page = () => {
         <div>
             <HeroBanner1
                 subtitle="<span>News!</span>Find Your Solution"
-                title="Build, Grow, and Automate Your Business with AI"
-                content="From stunning websites to intelligent lead generation—everything 
-you need to scale your business, powered by cutting-edge AI technology."
+                title="Build, Grow, and Automate Your Business"
+                content="From stunning websites to intelligent lead generation—everything you need to scale your business, powered by cutting-edge automation technology."
                 btnname="Start Your Free Consultation"
                 btnurl="/contact"
-                btntwo="Explore AI Solutions"
+                btntwo="Explore Solutions"
                 btn2url="/about"
                 cusimg="/assets/images/intro/introProfileThumb1_1.webp"
                 cusnumber="2,291"
@@ -74,11 +73,11 @@ you need to scale your business, powered by cutting-edge AI technology."
             {/* <Feature2></Feature2> */}
             <Pricing1></Pricing1>
             <Cta1
-                subtitle="Our App"
-                title="Download our app and start your free trail to get started today!"
-                content="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised"
-                btnurl1="https://play.google.com/store"
-                btnurl2="https://www.apple.com/store"
+                subtitle="Get Started"
+                title="Ready to Transform Your Business?"
+                content="Join thousands of businesses already using PropelusAI to automate their operations, generate leads, and scale faster. Start your free trial today—no credit card required."
+                btnurl1="/demo"
+                btnurl2="/pricing"
                 img="/assets/images/cta/ctaThumb1_1.png"
             ></Cta1>
             <Blog1></Blog1>

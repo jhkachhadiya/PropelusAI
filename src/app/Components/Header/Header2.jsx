@@ -2,12 +2,14 @@
 import { useEffect, useState } from 'react';
 import Nav from './Nav';
 import Link from 'next/link';
-import Image from 'next/image';
+
 export default function Header2({ variant }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState();
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [searchToggle, setSearchToggle] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,10 +44,10 @@ export default function Header2({ variant }) {
         <div className="container">
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
-            <Link className="cs_site_branding" href="/">
-                <Image src="/assets/images/logo/logo2.svg" alt="img" width={177} height={54}   />
+              <Link className="cs_site_branding" href="/">
+                <span className="logo-text">PropelusAI</span>
               </Link>
-              </div>
+            </div>
               <div className="cs_main_header_center">
                 <div className="cs_nav cs_primary_font fw-medium">
                   <span
@@ -58,13 +60,18 @@ export default function Header2({ variant }) {
                   >
                     <span></span>
                   </span>
-                  <Nav setMobileToggle={setMobileToggle} />
+                  <Nav 
+                    setMobileToggle={setMobileToggle}
+                    servicesOpen={servicesOpen}
+                    setServicesOpen={setServicesOpen}
+                    isMobile={false}
+                  />
                 </div>
             </div>
             <div className="cs_main_header_right">
               <div className="header-btn d-flex align-items-center">
 
-              <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a>
+              {/* <a onClick={() => setSearchToggle(!searchToggle)} className="search-trigger search-icon"><i className="bi bi-search"></i></a>
                 <div className="header-button ms-4">
                     <Link href="/contact" className="theme-btn">
                         <span>
@@ -73,7 +80,7 @@ export default function Header2({ variant }) {
                         </span>
                     </Link>
 
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

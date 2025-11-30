@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import data from '../../Data/services1.json';
-import Image from 'next/image';
 
 const Services1 = () => {
     return (
@@ -14,7 +13,7 @@ const Services1 = () => {
                                 <div className="section-title text-center" style={{ marginBottom: '60px' }}>
                                     <h2 className="title">Everything Your Business Needs, One Platform</h2>
                                     <p className="section-subtitle service-subtitle">
-                                        AI-powered solutions that work together seamlessly
+                                        Automated solutions that work together seamlessly
                                     </p>
                                 </div>
                             </div>
@@ -24,22 +23,22 @@ const Services1 = () => {
                         <div className="row gy-4">
                             {data.map((item, index) => (
                                 <div key={index} className="col-xl-4 col-lg-4 col-md-6 col-12">
-                                    <div className={`service-box style3 service-card-enhanced wow fadeInUp`} data-wow-delay={`${(index * 0.1)}s`}>
-                                        <div className={`icon-box style3 icon-box-${item.iconColor}`}>
-                                            <Image src={item.icon} alt={item.title} width={48} height={48} />
-                                        </div>
-                                        <div className="content">
-                                            <h3>
-                                                <Link href={item.href || "/service/service-details"}>
+                                    <Link href="/service" className="service-card-link">
+                                        <div className={`service-box style3 service-card-enhanced wow fadeInUp`} data-wow-delay={`${(index * 0.1)}s`}>
+                                            <div className={`icon-box style3 icon-box-${item.iconColor}`}>
+                                                <i className={`bi ${item.icon}`} style={{fontSize: '48px'}}></i>
+                                            </div>
+                                            <div className="content">
+                                                <h3>
                                                     {item.title}
-                                                </Link>
-                                            </h3>
-                                            <p className="text">{item.desc}</p>
-                                            <Link href={item.href || "/service/service-details"} className="service-learn-more">
-                                                Learn more →
-                                            </Link>
+                                                </h3>
+                                                <p className="text">{item.desc}</p>
+                                                <span className="service-learn-more">
+                                                    Learn more →
+                                                </span>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </Link>
                                 </div>
                             ))}
                         </div>

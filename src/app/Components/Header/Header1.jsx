@@ -98,10 +98,7 @@ export default function Header1({ variant }) {
               onClick={() => setMobileToggle(false)}
               aria-label="Close menu"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <line x1="18" y1="6" x2="6" y2="18"></line>
-                <line x1="6" y1="6" x2="18" y2="18"></line>
-              </svg>
+              <i className="bi bi-x-lg"></i>
             </button>
           </div>
           <div className="mobile-menu-body">

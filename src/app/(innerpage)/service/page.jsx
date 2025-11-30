@@ -3,6 +3,8 @@ import BreadCumb from '@/app/Components/Common/BreadCumb';
 import Cta2 from '@/app/Components/Cta/Cta2';
 import Services1 from '@/app/Components/Services/Services1';
 import Team2 from '@/app/Components/Team/Team2';
+import KeyFeatures from '@/app/Components/KeyFeatures/KeyFeatures';
+import SoftwareProcess from '@/app/Components/SoftwareProcess/SoftwareProcess';
 import React from 'react';
 
 const page = () => {
@@ -14,8 +16,10 @@ const page = () => {
           ></BreadCumb>   
           <Cta2></Cta2>
           <Services1></Services1>
+          <KeyFeatures></KeyFeatures>
+          <SoftwareProcess></SoftwareProcess>
           <Team2></Team2>
-          <Brand3></Brand3>           
+          {/* <Brand3></Brand3>            */}
     </div>
   );
 };

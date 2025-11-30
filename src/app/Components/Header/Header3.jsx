@@ -1,13 +1,15 @@
 "use client"
 import { useEffect, useState } from 'react';
 import Nav from './Nav';
-import Image from 'next/image';
 import Link from 'next/link';
+
 export default function Header3({ variant }) {
   const [mobileToggle, setMobileToggle] = useState(false);
   const [isSticky, setIsSticky] = useState();
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [searchToggle, setSearchToggle] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -42,10 +44,10 @@ export default function Header3({ variant }) {
         <div className="container">
           <div className="cs_main_header_in">
             <div className="cs_main_header_left">
-            <Link className="cs_site_branding" href="/">
-                <Image src="/assets/images/logo/logo.svg" alt="img" width={177} height={54}   />
+              <Link className="cs_site_branding" href="/">
+                <span className="logo-text">PropelusAI</span>
               </Link>
-              </div>
+            </div>
               <div className="cs_main_header_center">
                 <div className="cs_nav cs_primary_font fw-medium">
                   <span
@@ -58,7 +60,12 @@ export default function Header3({ variant }) {
                   >
                     <span></span>
                   </span>
-                  <Nav setMobileToggle={setMobileToggle} />
+                  <Nav 
+                    setMobileToggle={setMobileToggle}
+                    servicesOpen={servicesOpen}
+                    setServicesOpen={setServicesOpen}
+                    isMobile={false}
+                  />
                 </div>
             </div>
             <div className="cs_main_header_right">

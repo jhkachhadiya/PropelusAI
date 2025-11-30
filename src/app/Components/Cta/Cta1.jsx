@@ -1,45 +1,60 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 
 const Cta1 = ({subtitle,title,content,btnurl1,btnurl2,img}) => {
     return (
-        <section className="cta-section">
-            <div className="cta-container-wrapper style1">
-                <div className="container">
-                    <div className="cta-wrapper style1  section-padding fix">
-                        <div className="shape1 d-none d-xxl-block"><Image src="/assets/images/shape/ctaShape1_1.png" alt="img" width={373} height={147}   />
-                        </div>
-                        <div className="shape2 d-none d-xxl-block"><Image src="/assets/images/shape/ctaShape1_2.png" alt="img" width={228} height={143}   />
-                        </div>
-                        <div className="shape3 d-none d-xxl-block"><Image src="/assets/images/shape/ctaShape1_3.png" alt="img" width={606} height={272}   />
-                        </div>
-                        <div className="shape4 d-none d-xxl-block"><Image src="/assets/images/shape/ctaShape1_4.png" alt="img" width={223} height={134}   />
-                        </div>
-                        <div className="container">
-                            <div className="row gy-5">
-                                <div className="col-xl-8 order-2 order-xl-1">
-                                    <div className="cta-content">
-                                        <div className="section-title">
-                                            <div className="subtitle text-white bg2 wow fadeInUp" data-wow-delay=".2s">
-                                                {subtitle}  <Image src="/assets/images/icon/fireIcon.svg" alt="img" width={16} height={17}   /> 
-                                            </div>
-                                            <h2 className="title text-white wow fadeInUp" data-wow-delay=".4s">{title}</h2>
-                                            <p className="section-desc text-white mxw-651 wow fadeInUp" data-wow-delay=".6s">
-                                                {content}</p>
-                                        </div>
-                                        <Link className="playstore" href={btnurl1}>
-                                        <Image src="/assets/images/cta/ctaplayStore1_1.png" alt="img" width={190} height={55}   />
-                                        </Link>
-                                        <Link href={btnurl2}>
-                                        <Image src="/assets/images/cta/ctaAppleStore1_1.png" alt="img" width={190} height={55}   />
-                                        </Link>
+        <section className="cta-section-new">
+            <div className="container">
+                <div className="cta-wrapper-new">
+                    <div className="row g-5 align-items-center">
+                        <div className="col-xl-7">
+                            <div className="cta-content-new">
+                                <div className="cta-badge-new">
+                                    <span>{subtitle || "Get Started"}</span>
+                                </div>
+                                <h2 className="cta-title-new">{title || "Ready to Transform Your Business?"}</h2>
+                                <p className="cta-description-new">
+                                    {content || "Join thousands of businesses already using PropelusAI to automate their operations, generate leads, and scale faster. Start your free trial today—no credit card required."}
+                                </p>
+                                <div className="cta-buttons-new">
+                                    <Link href={btnurl1 || "/demo"} className="theme-btn cta-btn-primary">
+                                        Schedule a Demo
+                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                            <path d="M11.6118 3.61182L10.8991 4.32454L14.0706 7.49603H0V8.50398H14.0706L10.8991 11.6754L11.6118 12.3882L16 7.99997L11.6118 3.61182Z" fill="currentColor"/>
+                                        </svg>
+                                    </Link>
+                                    <Link href={btnurl2 || "/pricing"} className="theme-btn style2 cta-btn-secondary">
+                                        View Pricing
+                                    </Link>
+                                </div>
+                                <div className="cta-trust-indicators">
+                                    <div className="trust-item">
+                                        <span className="trust-number">2,291+</span>
+                                        <span className="trust-label">Happy Customers</span>
+                                    </div>
+                                    <div className="trust-item">
+                                        <span className="trust-number">4.8/5</span>
+                                        <span className="trust-label">Rating</span>
+                                    </div>
+                                    <div className="trust-item">
+                                        <span className="trust-number">14-day</span>
+                                        <span className="trust-label">Free Trial</span>
                                     </div>
                                 </div>
-                                <div className="col-xl-4 order-1 order-xl-2">
-                                    <div className="cta-thumb wow fadeInUp" data-wow-delay=".2s">
-                                    <Image src={img} alt="img" width={643} height={322}   />
-                                    </div>
-                                </div>
+                            </div>
+                        </div>
+                        <div className="col-xl-5">
+                            <div className="cta-image-wrapper">
+                                {img && (
+                                    <Image 
+                                        src={img} 
+                                        alt="PropelusAI Platform" 
+                                        width={643} 
+                                        height={322}
+                                        className="cta-image"
+                                    />
+                                )}
                             </div>
                         </div>
                     </div>

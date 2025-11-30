@@ -22,7 +22,7 @@ const useCases = [
       type: "linkedin",
       content: {
         headline: "From Blog to LinkedIn",
-        text: "AI converts your latest blog drop into three ready-to-post LinkedIn updates with optimized hooks, carousels, and CTA buttons.",
+        text: "Automatically converts your latest blog drop into three ready-to-post LinkedIn updates with optimized hooks, carousels, and CTA buttons.",
         metrics: { views: "2.8K", likes: "214", comments: "31" }
       }
     }
@@ -194,7 +194,7 @@ const AIShowcase1 = () => {
               <div className="col-12">
                 <div className="section-title text-center" style={{ marginBottom: '80px' }}>
                   <span className="ai-showcase-eyebrow">Let PropelusAI handle the growth work.</span>
-                  <h2 className="title">See AI-Powered Automation in Action</h2>
+                  <h2 className="title">See Automation in Action</h2>
                   <p className="ai-showcase-description">
                     Pick a use case to see how our automation copilots combine the polish of Stripe demos
                     with the simplicity of Notion’s workflows.
@@ -206,14 +206,13 @@ const AIShowcase1 = () => {
             {/* Two Column Layout */}
             <div className="row g-5 align-items-center">
               {/* Left Column - Dropdown */}
-              <div className="col-xl-6 col-lg-6">
+              <div className="col-xl-5 col-lg-5">
                 <div className="ai-showcase-dropdown-wrapper">
                   <div className="use-case-selector-head">
                     <div>
-                      <p className="use-case-instruction">Pick a service to see AI in action</p>
-                      <p className="use-case-helper">Tap a tile or use the dropdown to explore workflows.</p>
+                      <h3 className="use-case-instruction">Pick a service to see automation in action</h3>
+                      <p className="use-case-helper">Tap a tile below or use the dropdown to explore workflows and see real examples.</p>
                     </div>
-                    <span className="use-case-count">{useCases.length} options</span>
                   </div>
 
                   <div className="use-case-select-wrapper">
@@ -221,7 +220,7 @@ const AIShowcase1 = () => {
                       className="use-case-select"
                       value={selectedUseCase}
                       onChange={(event) => handleUseCaseChange(Number(event.target.value))}
-                      aria-label="Select an AI use case"
+                      aria-label="Select an automation use case"
                     >
                       {useCases.map((useCase, index) => (
                         <option key={useCase.id} value={index}>
@@ -264,29 +263,43 @@ const AIShowcase1 = () => {
                   </div>
 
                   <div className="use-case-details">
+                    <div className="details-header">
+                      <h4 className="details-title">What You Get</h4>
+                    </div>
                     <p className="use-case-tagline">{currentUseCase.tagline}</p>
                     <p className="use-case-summary">{currentUseCase.summary}</p>
-                    <ul className="use-case-benefits">
-                      {currentUseCase.benefits.map((benefit, idx) => (
-                        <li key={idx}>{benefit}</li>
-                      ))}
-                    </ul>
-                    <div className="use-case-metrics">
-                      {currentUseCase.metrics.map((metric, idx) => (
-                        <div className="use-case-metric" key={metric.label}>
-                          <span className="use-case-metric-value">
-                            {formatMetricValue(animatedMetrics[idx] || 0, metric)}
-                          </span>
-                          <span className="use-case-metric-label">{metric.label}</span>
-                        </div>
-                      ))}
+                    
+                    <div className="details-header">
+                      <h5 className="details-title">Key Benefits</h5>
+                      </div>
+                      <div className="benefits-section">
+                      <span className="benefits-separator"></span>
+                      <ul className="use-case-benefits">
+                        {currentUseCase.benefits.map((benefit, idx) => (
+                          <li key={idx}>{benefit}</li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    <div className="metrics-section">
+                      <h5 className="metrics-title">Results</h5>
+                      <div className="use-case-metrics">
+                        {currentUseCase.metrics.map((metric, idx) => (
+                          <div className="use-case-metric" key={metric.label}>
+                            <span className="use-case-metric-value">
+                              {formatMetricValue(animatedMetrics[idx] || 0, metric)}
+                            </span>
+                            <span className="use-case-metric-label">{metric.label}</span>
+                          </div>
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Right Column - Animated Mockup */}
-              <div className="col-xl-6 col-lg-6">
+              <div className="col-xl-7 col-lg-7">
                 <div className="ai-showcase-mockup-wrapper">
                   <div className={`mockup-container ${isAnimating ? 'animating' : ''}`}>
                     <div className="mockup-frame">

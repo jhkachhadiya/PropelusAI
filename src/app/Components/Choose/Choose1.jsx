@@ -22,12 +22,12 @@ const Choose1 = ({subtitle,title,content,FeatureList,FeatureList2,btnname,btnurl
                                         <div className="checklist-wrapper style1 wow fadeInUp" data-wow-delay=".4s">
                                             <ul className="checklist style1">
                                             {FeatureList?.map((item, index) => (
-                                                <li key={index}><Image src="/assets/images/icon/checkmarkIcon.svg" alt="img" width={30} height={30}   /> {item}</li>
+                                                <li key={index}><i className="bi bi-check-circle-fill" style={{fontSize: '30px', color: '#7444FD'}}></i> {item}</li>
                                             ))}
                                             </ul>
                                             <ul className="checklist style1">
                                             {FeatureList2?.map((item, index) => (
-                                                <li key={index}><Image src="/assets/images/icon/checkmarkIcon.svg" alt="img" width={30} height={30}   />{item} </li>
+                                                <li key={index}><i className="bi bi-check-circle-fill" style={{fontSize: '30px', color: '#7444FD'}}></i>{item} </li>
                                             ))}
                                             </ul>
                                         </div>

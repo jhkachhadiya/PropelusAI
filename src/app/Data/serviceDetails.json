@@ -1,0 +1,276 @@
+{
+  "website-development": {
+    "title": "Custom website development that drives results",
+    "tags": ["Web Development", "Responsive Design", "Performance", "SEO"],
+    "overview": "We build websites that aren't just visually appealing—they're built to convert visitors into customers. Every site we create is optimized for speed, mobile devices, and search engines from day one.",
+    "description": "Our team combines beautiful design with smart development practices. We use modern frameworks and technologies to ensure your site loads fast, works perfectly on all devices, and helps you reach your business goals.",
+    "features": [
+      {
+        "title": "Experience",
+        "description": "Over 5 years of building websites for businesses across industries. We've seen what works and what doesn't.",
+        "color": "#00E599"
+      },
+      {
+        "title": "Expertise",
+        "description": "Our developers stay current with the latest technologies and best practices in web development.",
+        "color": "#FF6B9D"
+      },
+      {
+        "title": "Flexibility",
+        "description": "Whether you need a simple landing page or a complex web application, we adapt to your needs.",
+        "color": "#00D4FF"
+      },
+      {
+        "title": "Quality",
+        "description": "Every line of code is reviewed, tested, and optimized. We don't cut corners.",
+        "color": "#635BFF"
+      },
+      {
+        "title": "Cost-effectiveness",
+        "description": "Get enterprise-level quality without the enterprise price tag. We work efficiently to keep costs down.",
+        "color": "#00C2A8"
+      }
+    ],
+    "benefits": [
+      "Faster load times improve user experience",
+      "Mobile-responsive design reaches more customers",
+      "SEO optimization helps you rank higher in search",
+      "Scalable architecture grows with your business"
+    ]
+  },
+  "mobile-app": {
+    "title": "Native and cross-platform mobile apps that users love",
+    "tags": ["iOS", "Android", "React Native", "Performance"],
+    "overview": "We create mobile apps that feel native, perform smoothly, and provide genuine value to your users. From concept to app store, we handle every step of the process.",
+    "description": "Our mobile app development focuses on creating intuitive user experiences. We build apps that are fast, reliable, and enjoyable to use—whether on iPhone, Android, or both.",
+    "features": [
+      {
+        "title": "Experience",
+        "description": "Built over 50 mobile apps that have been downloaded by thousands of users worldwide.",
+        "color": "#00E599"
+      },
+      {
+        "title": "Expertise",
+        "description": "Specialized knowledge in both native iOS/Android development and cross-platform solutions like React Native.",
+        "color": "#FF6B9D"
+      },
+      {
+        "title": "Flexibility",
+        "description": "We can build native apps for specific platforms or cross-platform apps that work everywhere.",
+        "color": "#00D4FF"
+      },
+      {
+        "title": "Quality",
+        "description": "Rigorous testing ensures your app works flawlessly across different devices and operating systems.",
+        "color": "#635BFF"
+      },
+      {
+        "title": "Cost-effectiveness",
+        "description": "Cross-platform development can save you time and money while maintaining quality standards.",
+        "color": "#00C2A8"
+      }
+    ],
+    "benefits": [
+      "Reach customers on their preferred devices",
+      "Increase engagement with push notifications",
+      "Monetize through in-app purchases",
+      "Build brand loyalty through daily app usage"
+    ]
+  },
+  "linkedin-marketing": {
+    "title": "LinkedIn marketing that connects you with decision-makers",
+    "tags": ["LinkedIn", "B2B Marketing", "Lead Generation", "Content"],
+    "overview": "LinkedIn is where professionals connect, and we help you stand out. Our strategies get your content in front of the right people at the right time.",
+    "description": "We specialize in LinkedIn marketing for B2B companies. From content creation to paid advertising, we help you build relationships with potential clients and grow your professional network.",
+    "features": [
+      {
+        "title": "Experience",
+        "description": "Managed LinkedIn campaigns for dozens of B2B companies, generating thousands of qualified leads.",
+        "color": "#00E599"
+      },
+      {
+        "title": "Expertise",
+        "description": "Deep understanding of LinkedIn's algorithm, ad platform, and what content performs best.",
+        "color": "#FF6B9D"
+      },
+      {
+        "title": "Flexibility",
+        "description": "Services range from content strategy to full campaign management—whatever fits your needs.",
+        "color": "#00D4FF"
+      },
+      {
+        "title": "Quality",
+        "description": "Every piece of content is crafted to resonate with your target audience and drive engagement.",
+        "color": "#635BFF"
+      },
+      {
+        "title": "Cost-effectiveness",
+        "description": "Get better ROI from your LinkedIn advertising with optimized campaigns and targeting.",
+        "color": "#00C2A8"
+      }
+    ],
+    "benefits": [
+      "Connect with decision-makers in your industry",
+      "Build thought leadership through valuable content",
+      "Generate qualified B2B leads at scale",
+      "Increase brand awareness among professionals"
+    ]
+  },
+  "lead-generation": {
+    "title": "Lead generation systems that fill your pipeline",
+    "tags": ["Lead Gen", "Automation", "Conversion", "Funnels"],
+    "overview": "Stop waiting for leads to come to you. We build systems that actively find and nurture potential customers, turning them into paying clients.",
+    "description": "Our lead generation approach combines multiple strategies—from landing pages to email campaigns to automation tools. Everything works together to bring qualified leads to your business.",
+    "features": [
+      {
+        "title": "Experience",
+        "description": "Generated thousands of leads for clients across various industries and business models.",
+        "color": "#00E599"
+      },
+      {
+        "title": "Expertise",
+        "description": "Know which lead generation tactics work best for different types of businesses and target markets.",
+        "color": "#FF6B9D"
+      },
+      {
+        "title": "Flexibility",
+        "description": "Build custom lead funnels tailored to your specific product, service, and customer journey.",
+        "color": "#00D4FF"
+      },
+      {
+        "title": "Quality",
+        "description": "Focus on quality over quantity—we help you attract leads that are actually interested in what you offer.",
+        "color": "#635BFF"
+      },
+      {
+        "title": "Cost-effectiveness",
+        "description": "Automated systems mean lower cost per lead and better ROI than traditional advertising.",
+        "color": "#00C2A8"
+      }
+    ],
+    "benefits": [
+      "Consistent flow of new potential customers",
+      "Automated nurturing saves time and resources",
+      "Better conversion rates with targeted messaging",
+      "Scale your business without scaling your team"
+    ]
+  },
+  "marketing-automation": {
+    "title": "Marketing automation that works while you sleep",
+    "tags": ["Automation", "Email Marketing", "Workflows", "CRM"],
+    "overview": "Automate repetitive marketing tasks so you can focus on growing your business. Our automation systems handle everything from email sequences to lead scoring.",
+    "description": "We set up marketing automation that actually works. Our systems nurture leads, segment audiences, and send the right message at the right time—all automatically.",
+    "features": [
+      {
+        "title": "Experience",
+        "description": "Implemented marketing automation for hundreds of businesses, from startups to established companies.",
+        "color": "#00E599"
+      },
+      {
+        "title": "Expertise",
+        "description": "Proficient with major automation platforms including HubSpot, Marketo, and custom solutions.",
+        "color": "#FF6B9D"
+      },
+      {
+        "title": "Flexibility",
+        "description": "We can work with your existing tools or recommend and implement new platforms that fit your needs.",
+        "color": "#00D4FF"
+      },
+      {
+        "title": "Quality",
+        "description": "Every automation workflow is carefully designed and tested before going live to ensure it performs as expected.",
+        "color": "#635BFF"
+      },
+      {
+        "title": "Cost-effectiveness",
+        "description": "Automation reduces manual work, allowing your team to handle more leads with the same resources.",
+        "color": "#00C2A8"
+      }
+    ],
+    "benefits": [
+      "Save hours every week on repetitive tasks",
+      "Never miss following up with a lead",
+      "Personalize communications at scale",
+      "Track and optimize your marketing performance"
+    ]
+  },
+  "custom-email-domains": {
+    "title": "Professional email domains that build trust",
+    "tags": ["Email Setup", "Domain Configuration", "Business Email", "Professional"],
+    "overview": "Yourname@company.com looks professional. We set up custom email domains that make your business look established and trustworthy.",
+    "description": "We handle all the technical details of setting up custom email domains. From domain configuration to email client setup, we make it easy so you can focus on your business.",
+    "features": [
+      {
+        "title": "Experience",
+        "description": "Configured email domains for countless businesses, ensuring reliable delivery and professional appearance.",
+        "color": "#00E599"
+      },
+      {
+        "title": "Expertise",
+        "description": "Deep knowledge of email servers, DNS records, and all the technical requirements for professional email.",
+        "color": "#FF6B9D"
+      },
+      {
+        "title": "Flexibility",
+        "description": "Work with any email provider you prefer—Gmail, Outlook, or custom hosting solutions.",
+        "color": "#00D4FF"
+      },
+      {
+        "title": "Quality",
+        "description": "Proper setup means your emails land in inboxes, not spam folders, and maintain professional standards.",
+        "color": "#635BFF"
+      },
+      {
+        "title": "Cost-effectiveness",
+        "description": "One-time setup saves you from ongoing email hassles and builds credibility that pays dividends.",
+        "color": "#00C2A8"
+      }
+    ],
+    "benefits": [
+      "Build credibility with professional email addresses",
+      "Protect your brand with branded email domains",
+      "Improve deliverability with proper configuration",
+      "Centralize email management for your team"
+    ]
+  },
+  "cybersecurity": {
+    "title": "Cybersecurity that protects what matters most",
+    "tags": ["Security", "Data Protection", "Compliance", "Monitoring"],
+    "overview": "Your business data is valuable—and vulnerable. We implement security measures that protect your information and give you peace of mind.",
+    "description": "Cybersecurity isn't optional anymore. We help businesses of all sizes implement proper security measures, from basic protections to advanced monitoring and threat detection.",
+    "features": [
+      {
+        "title": "Experience",
+        "description": "Protected businesses from cyber threats for years, preventing data breaches and security incidents.",
+        "color": "#00E599"
+      },
+      {
+        "title": "Expertise",
+        "description": "Stay current with evolving security threats and the latest protection technologies and best practices.",
+        "color": "#FF6B9D"
+      },
+      {
+        "title": "Flexibility",
+        "description": "Security solutions that scale from basic protections for small businesses to enterprise-level systems.",
+        "color": "#00D4FF"
+      },
+      {
+        "title": "Quality",
+        "description": "Thorough security audits identify vulnerabilities before they become problems, with ongoing monitoring to keep you protected.",
+        "color": "#635BFF"
+      },
+      {
+        "title": "Cost-effectiveness",
+        "description": "Prevent expensive security breaches with proactive protection that costs far less than recovery.",
+        "color": "#00C2A8"
+      }
+    ],
+    "benefits": [
+      "Protect sensitive customer and business data",
+      "Meet compliance requirements for your industry",
+      "Prevent costly data breaches and downtime",
+      "Build customer trust with strong security practices"
+    ]
+  }
+}
+

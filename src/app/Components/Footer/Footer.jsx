@@ -47,7 +47,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/service/mobile-apps">
+                                        <Link href="/service/mobile-app">
                                             Mobile Apps
                                         </Link>
                                     </li>
@@ -78,23 +78,23 @@ const Footer = () => {
                                 </div>
                                 <ul className="list-area">
                                     <li>
-                                        <Link href="/solutions">
-                                            For Business
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/solutions">
-                                            For Enterprise
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/solutions">
+                                        <Link href="/solutions#startups">
                                             For Startups
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/solutions">
-                                            Integrations
+                                        <Link href="/solutions#agencies">
+                                            For Agencies
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/solutions#enterprise">
+                                            For Enterprise
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/solutions#founders">
+                                            For Founders
                                         </Link>
                                     </li>
                                 </ul>
@@ -114,23 +114,23 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/resources">
-                                            Documentation
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link href="/resources">
+                                        <Link href="/resources#case-studies">
                                             Case Studies
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/resources">
+                                        <Link href="/resources#guides">
                                             Guides
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="/faq">
-                                            FAQ
+                                        <Link href="/resources#academy">
+                                            Learning Academy
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link href="/resources#support">
+                                            Support
                                         </Link>
                                     </li>
                                 </ul>

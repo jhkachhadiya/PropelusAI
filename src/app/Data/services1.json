@@ -1,48 +1,48 @@
 [
   {
-    "icon": "/assets/images/icon/serviceIcon3_1.svg",
+    "icon": "bi-code-slash",
     "iconColor": "purple",
     "title": "Website Development",
     "desc": "Fast, custom websites",
     "href": "/service/website-development"
   },
   {
-    "icon": "/assets/images/icon/serviceIcon3_2.svg",
+    "icon": "bi-phone-fill",
     "iconColor": "blue",
     "title": "Mobile Apps",
     "desc": "iOS & Android apps",
-    "href": "/service/mobile-apps"
+    "href": "/service/mobile-app"
   },
   {
-    "icon": "/assets/images/icon/serviceIcon3_3.svg",
+    "icon": "bi-linkedin",
     "iconColor": "pink",
     "title": "LinkedIn Marketing",
     "desc": "Grow LinkedIn reach",
     "href": "/service/linkedin-marketing"
   },
   {
-    "icon": "/assets/images/icon/serviceIcon3_4.svg",
+    "icon": "bi-person-badge",
     "iconColor": "green",
     "title": "Lead Generation",
     "desc": "Get qualified leads",
     "href": "/service/lead-generation"
   },
   {
-    "icon": "/assets/images/icon/serviceIcon3_5.svg",
+    "icon": "bi-robot",
     "iconColor": "purple",
     "title": "Marketing Automation",
     "desc": "Automate campaigns easily",
     "href": "/service/marketing-automation"
   },
   {
-    "icon": "/assets/images/icon/serviceIcon3_6.svg",
+    "icon": "bi-envelope-at",
     "iconColor": "blue",
     "title": "Custom Email Domains",
     "desc": "Professional email setup",
     "href": "/service/custom-email-domains"
   },
   {
-    "icon": "/assets/images/icon/serviceIcon1_1.svg",
+    "icon": "bi-shield-lock-fill",
     "iconColor": "pink",
     "title": "Cybersecurity",
     "desc": "Protect digital assets",
