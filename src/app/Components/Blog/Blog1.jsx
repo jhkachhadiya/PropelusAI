@@ -24,7 +24,7 @@ const Blog1 = () => {
                                     <Image src="/assets/images/icon/FolderIcon.svg" alt="img" width={16} height={12}   />
                                         Workplace
                                     </div>
-                                    <h3><Link href="/blog/blog-details">Services that printing at you is important</Link></h3>
+                                    <h3><Link href="/resources#blog">Services that printing at you is important</Link></h3>
                                     <div className="blog-meta">
                                         <div className="item child1">
                                             <span className="icon">
@@ -52,7 +52,7 @@ const Blog1 = () => {
                                     <Image src="/assets/images/icon/FolderIcon.svg" alt="img" width={16} height={12}   />
                                         Coding
                                     </div>
-                                    <h3><Link href="/blog/blog-details">A checklist to improve your daily routine</Link></h3>
+                                    <h3><Link href="/resources#blog">A checklist to improve your daily routine</Link></h3>
                                     <div className="blog-meta">
                                         <div className="item child1">
                                             <span className="icon">
@@ -80,7 +80,7 @@ const Blog1 = () => {
                                     <Image src="/assets/images/icon/FolderIcon.svg" alt="img" width={16} height={12}   />
                                         Technology
                                     </div>
-                                    <h3><Link href="/blog/blog-details">That will help you get 1% better every day</Link></h3>
+                                    <h3><Link href="/resources#blog">That will help you get 1% better every day</Link></h3>
                                     <div className="blog-meta">
                                         <div className="item child1">
                                             <span className="icon">
@@ -108,7 +108,7 @@ const Blog1 = () => {
                                     <Image src="/assets/images/icon/FolderIcon.svg" alt="img" width={16} height={12}   />
                                         Business
                                     </div>
-                                    <h3><Link href="/blog/blog-details">Effective strategies for lead generation</Link></h3>
+                                    <h3><Link href="/resources#blog">Effective strategies for lead generation</Link></h3>
                                     <div className="blog-meta">
                                         <div className="item child1">
                                             <span className="icon">
