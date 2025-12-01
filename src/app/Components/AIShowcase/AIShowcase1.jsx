@@ -185,7 +185,7 @@ const AIShowcase1 = () => {
   const currentUseCase = useCases[selectedUseCase];
 
   return (
-    <section className="ai-showcase-section section-padding fix">
+    <section className="ai-showcase-section fix">
       <div className="ai-showcase-container-wrapper style1">
         <div className="container">
           <div className="ai-showcase-wrapper style1">
@@ -213,21 +213,6 @@ const AIShowcase1 = () => {
                       <h3 className="use-case-instruction">Pick a service to see automation in action</h3>
                       <p className="use-case-helper">Tap a tile below or use the dropdown to explore workflows and see real examples.</p>
                     </div>
-                  </div>
-
-                  <div className="use-case-select-wrapper">
-                    <select
-                      className="use-case-select"
-                      value={selectedUseCase}
-                      onChange={(event) => handleUseCaseChange(Number(event.target.value))}
-                      aria-label="Select an automation use case"
-                    >
-                      {useCases.map((useCase, index) => (
-                        <option key={useCase.id} value={index}>
-                          {useCase.title}
-                        </option>
-                      ))}
-                    </select>
                   </div>
 
                   <div className="use-case-list">
@@ -262,7 +247,7 @@ const AIShowcase1 = () => {
                     ))}
                   </div>
 
-                  <div className="use-case-details">
+                  {/* <div className="use-case-details">
                     <div className="details-header">
                       <h4 className="details-title">What You Get</h4>
                     </div>
@@ -294,7 +279,7 @@ const AIShowcase1 = () => {
                         ))}
                       </div>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

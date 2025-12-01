@@ -98,7 +98,7 @@ const Blog1 = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-xl-4 col-md-6">
+                        {/* <div className="col-xl-4 col-md-6">
                             <div className="blog-card style1 wow fadeInUp" data-wow-delay=".8s">
                                 <div className="thumb" style={{overflow: 'hidden', borderRadius: '12px', marginBottom: '20px'}}>
                                 <Image src="/assets/images/blog/blog-lead-generation.webp" alt="img" width={326} height={219} style={{width: '100%', height: 'auto', display: 'block'}} />
@@ -125,7 +125,7 @@ const Blog1 = () => {
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

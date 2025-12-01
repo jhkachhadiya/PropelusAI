@@ -4,7 +4,7 @@ import Footer from '../Components/Footer/Footer';
 
 const DefalultLayout = ({ children }) => {
     return (
-        <div className='main-page-area'>
+        <div>
             <Header1></Header1>
             {children}
             <Footer></Footer>

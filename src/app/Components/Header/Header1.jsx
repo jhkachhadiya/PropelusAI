@@ -35,6 +35,7 @@ export default function Header1({ variant }) {
     };
   }, [mobileToggle]);
 
+
   return (
     <>
       <header
@@ -43,9 +44,12 @@ export default function Header1({ variant }) {
         }`}
       >
         <div className="navbar-container">
-          {/* Left: Logo */}
+          {/* Left: Logo with Icon */}
           <div className="navbar-logo">
             <Link href="/" className="logo-link">
+              <svg className="logo-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 21L12 3L21 21H3Z" fill="#635BFF" stroke="#635BFF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+              </svg>
               <span className="logo-text">PropelusAI</span>
             </Link>
           </div>
@@ -62,7 +66,7 @@ export default function Header1({ variant }) {
 
           {/* Right: Contact Button */}
           <div className="navbar-actions">
-            <Link href="/contact" className="theme-btn navbar-cta-btn">
+            <Link href="/contact" className="contact-us-btn">
               Contact Us
             </Link>
           </div>

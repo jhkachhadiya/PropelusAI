@@ -90,7 +90,7 @@ export default function Nav({ setMobileToggle, isMobile = false, servicesOpen, s
 
   return (
     <ul className="navbar-nav-list">
-      <li
+      <li 
         className="navbar-nav-item has-megamenu"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}

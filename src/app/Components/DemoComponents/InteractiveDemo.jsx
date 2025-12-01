@@ -26,7 +26,7 @@ const InteractiveDemo = () => {
             icon: 'bi-graph-up-arrow',
             content: {
                 type: 'video',
-                thumbnail: '/assets/images/hero/hero-bg.jpg',
+                thumbnail: '/assets/images/hero/maxresdefault.jpg',
                 videoUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
                 description: 'See how PropelusAI automates your entire workflow in minutes'
             }
@@ -37,7 +37,7 @@ const InteractiveDemo = () => {
             icon: 'bi-lightning-charge',
             content: {
                 type: 'screenshot',
-                image: '/assets/images/intro/introThumb1_1.png',
+                image: '/assets/images/intro/AI-Automation.jpg',
                 floatingElements: [
                     { id: 1, label: 'Content Generator', position: { top: '15%', left: '10%' } },
                     { id: 2, label: 'Automated Workflows', position: { top: '45%', right: '15%' } },

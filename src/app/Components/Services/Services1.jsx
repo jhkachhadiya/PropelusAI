@@ -21,27 +21,34 @@ const Services1 = () => {
                         </div>
                         
                         {/* Services Grid */}
-                        <div className="row gy-4">
-                            {data.map((item, index) => (
-                                <div key={index} className="col-xl-4 col-lg-4 col-md-6 col-12">
-                                    <Link href={item.href || "/service"} className="service-card-link">
-                                        <div className={`service-box style3 service-card-enhanced wow fadeInUp`} data-wow-delay={`${(index * 0.1)}s`}>
-                                            <div className={`icon-box style3 icon-box-${item.iconColor}`}>
-                                                <i className={`bi ${item.icon}`} style={{fontSize: '48px'}}></i>
+                        <div className="row gy-4 service-grid-wrapper">
+                            {data.map((item, index) => {
+                                const isLastItem = index === data.length - 1;
+                                const isLastRow = data.length % 3 === 1 && isLastItem;
+                                return (
+                                    <div 
+                                        key={index} 
+                                        className={`col-xl-4 col-lg-4 col-md-6 col-12 ${isLastRow ? 'service-last-card' : ''}`}
+                                    >
+                                        <Link href={item.href || "/service"} className="service-card-link">
+                                            <div className={`service-box style3 service-card-enhanced wow fadeInUp`} data-wow-delay={`${(index * 0.1)}s`}>
+                                                <div className={`icon-box style3 icon-box-${item.iconColor}`}>
+                                                    <i className={`bi ${item.icon}`}></i>
+                                                </div>
+                                                <div className="content">
+                                                    <h3>
+                                                        {item.title}
+                                                    </h3>
+                                                    <p className="text">{item.desc}</p>
+                                                    <span className="service-learn-more">
+                                                        Learn more →
+                                                    </span>
+                                                </div>
                                             </div>
-                                            <div className="content">
-                                                <h3>
-                                                    {item.title}
-                                                </h3>
-                                                <p className="text">{item.desc}</p>
-                                                <span className="service-learn-more">
-                                                    Learn more →
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </Link>
-                                </div>
-                            ))}
+                                        </Link>
+                                    </div>
+                                );
+                            })}
                         </div>
                     </div>
                 </div>

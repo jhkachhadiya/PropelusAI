@@ -37,7 +37,7 @@ const Brand1 = () => {
       }; 
 
     return (
-        <div className="brand-slider-section section-padding fix">
+        <div className="brand-slider-section fix">
             <div className="brand-slider-container-wrapper style1">
                 <div className="container">
                     <div className="brand-slider-wrapper style1">
